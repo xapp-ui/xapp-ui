@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name xapp-ui ./src/componentsLoader.js",
+    "build": "vue-cli-service build --target lib --name xapp-ui ./src/main.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "lint": "vue-cli-service lint"
