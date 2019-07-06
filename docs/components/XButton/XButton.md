@@ -10,6 +10,7 @@ The ```x-button``` component can be used instead of an html standard button.
 <x-button variant='secondary'>Secondary</x-button>
 <x-button variant='success'>Success</x-button>
 <x-button variant='warning'>Warning</x-button>
+<x-button variant='danger'>Danger</x-button>
 <x-button variant='info'>Info</x-button>
 
 ```html
@@ -18,6 +19,7 @@ The ```x-button``` component can be used instead of an html standard button.
 <x-button variant='secondary'>Secondary</x-button>
 <x-button variant='success'>Success</x-button>
 <x-button variant='warning'>Warning</x-button>
+<x-button variant='danger'>Danger</x-button>
 <x-button variant='info'>Info</x-button>
 ```
 
