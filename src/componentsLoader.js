@@ -9,7 +9,7 @@ export default function(Vue) {
   
     const componentConfig = requireComponent(fileName)
 
-
+    console.log('component name =' + componentConfig.name);
 
     const folderName = fileName.split('/')[1];
     const mainFileName = fileName.split('/')[2].replace(/^\.\//,'').replace(/\.\w+$/, '');

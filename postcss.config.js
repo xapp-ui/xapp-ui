@@ -13,8 +13,9 @@
 
 module.exports = {
   plugins: [
+    require('postcss-import'),
     require('tailwindcss'),
-    require('autoprefixer'),
+    require('postcss-preset-env')({ stage: 1 }),
     // purgecss,
     // ...process.env.NODE_ENV === 'production'
     //   ? [purgecss]

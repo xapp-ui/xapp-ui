@@ -1,9 +1,7 @@
-@tailwind base;
+@import "tailwindcss/base";
+@import "./styles.css";
 
-@tailwind components;
+@import "tailwindcss/components";
+@import "./button.css";
 
-:root {
-  --primary: #4099de;
-}
-
-@tailwind utilities;
+@import "tailwindcss/utilities";

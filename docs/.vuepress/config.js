@@ -18,7 +18,7 @@ module.exports = {
         {
           title: 'Components',
           collapsable: false,
-          children: ['Card']
+          children: ['Card', 'XButton/XButton']
         }
       ]
     }

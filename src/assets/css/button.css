@@ -1,0 +1,40 @@
+.x-button {
+    @apply rounded font-bold px-3 py-2 border border-gray-light cursor-pointer text-base;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+         @apply outline-none shadow-outline;
+    }
+
+    &.bg-primary {
+        @apply border-primary-light
+    }
+
+    &.bg-secondary {
+         @apply border-secondary-light
+    }
+
+    &.bg-info {
+         @apply border-info-light
+    }
+
+    &.bg-success {
+         @apply border-success-light
+    }
+
+    &.bg-danger {
+         @apply border-danger-light
+    }
+
+    &.bg-warning {
+         @apply border-warning-light
+    }
+
+    &.small {
+        @apply text-sm p-2 !important;
+    }
+
+    &.large {
+         @apply text-lg p-3 !important;
+    }
+}
