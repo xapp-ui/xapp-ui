@@ -1,8 +1,11 @@
-import Vue from 'vue'
-import App from './App.vue'
 
-Vue.config.productionTip = false
+import componentsLoader from './componentsLoader'
+import './assets/css/xapp.css'
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+export default {
+
+    install: function(Vue) {
+      // register the components globally
+      componentsLoader(Vue);
+    }
+}
