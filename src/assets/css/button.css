@@ -31,7 +31,7 @@
     }
 
     &.small {
-        @apply text-sm p-2 !important;
+        @apply text-xs p-2 !important;
     }
 
     &.large {
