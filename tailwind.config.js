@@ -36,6 +36,18 @@ module.exports = {
       'danger-light': 'var(--danger-light)',
       'danger': 'var(--danger)',
       'danger-dark': 'var(--danger-dark)',
+    },
+
+    extend: {
+      boxShadow: {
+        'outline': '0 0 0 0.15rem var(--gray-light)',
+        'outline-primary': '0 0 0 0.15rem var(--primary-light)',
+        'outline-secondary': '0 0 0 0.15rem var(--secondary-light)',
+        'outline-success': '0 0 0 0.15rem var(--success-light)',
+        'outline-warning': '0 0 0 0.15rem var(--warning-light)',
+        'outline-info': '0 0 0 0.15rem var(--info-light)',
+        'outline-danger': '0 0 0 0.15rem var(--danger-light)',
+      }
     }
   },
   variants: {},
