@@ -25,6 +25,8 @@ The ```x-button``` component can be used instead of an html standard button.
 
 ### Outline buttons
 ***
+
+####
 <x-button outline>Default</x-button>
 <x-button outline variant='primary'>Primary</x-button>
 <x-button outline variant='secondary'>Secondary</x-button>
@@ -45,6 +47,7 @@ The ```x-button``` component can be used instead of an html standard button.
 
 ### Button sizes
 ***
+####
 <x-button variant='info' size='xlarge'>EXTRA LARGE</x-button>
 <x-button variant='info' size='large'>LARGE</x-button>
 <x-button variant='info' size='normal'>NORMAL</x-button>
@@ -60,6 +63,9 @@ The ```x-button``` component can be used instead of an html standard button.
 
 ### Button Elements
 ***
+Default element of the button is just a normal button, but you can switch it to an input or anchor tag using ```element``` attribute.  
+
+ #### 
 <x-button element='button'>Button</x-button>
 <x-button element='a' href='#/btn-link'>Link</x-button>
 <x-button element='input' value='Submit' type='submit' />
@@ -68,4 +74,20 @@ The ```x-button``` component can be used instead of an html standard button.
 <x-button element='button'>Button</x-button>
 <x-button element='a' href='#/btn-link'>Link</x-button>
 <x-button element='input' value='Submit' type='submit' />
+```
+
+### Button Spread
+***
+add the attribute ```spread``` to make the button spread across its parent container.
+
+####
+
+<x-button spread variant='primary'>Primary</x-button>
+<x-button spread variant='secondary'>Secondary</x-button>
+<x-button spread variant='success'>Success</x-button>
+
+```html
+<x-button spread variant='primary'>Primary</x-button>
+<x-button spread variant='secondary'>Secondary</x-button>
+<x-button spread variant='success'>Success</x-button>
 ```
