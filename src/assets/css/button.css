@@ -1,5 +1,5 @@
 .x-button {
-    @apply rounded appearance-none inline-block font-bold px-2 py-1 border border-gray-light cursor-pointer text-base;
+    @apply rounded appearance-none font-bold px-2 py-1 border border-gray-light cursor-pointer text-base;
     transition: all 0.2s ease-in-out;
 
     &:focus {
