@@ -1,40 +1,120 @@
 .x-button {
-    @apply rounded font-bold px-3 py-2 border border-gray-light cursor-pointer text-base;
+    @apply rounded appearance-none inline-block font-bold px-2 py-1 border border-gray-light cursor-pointer text-base;
     transition: all 0.2s ease-in-out;
 
-    &:hover {
-         @apply outline-none shadow-outline;
-    }
+    &:focus {
+        @apply outline-none shadow-outline;
+     }
 
     &.bg-primary {
-        @apply border-primary-light
+        @apply border-primary-light;
+
+        &:focus {
+           @apply shadow-outline-primary;
+        }
+    }
+
+    &.text-primary {
+        @apply border-primary;
+
+        &:focus {
+             @apply shadow-outline-primary;
+        }
     }
 
     &.bg-secondary {
-         @apply border-secondary-light
+         @apply border-secondary-light;
+
+        &:focus {
+             @apply shadow-outline-secondary;
+        }
+    }
+
+    &.text-secondary {
+         @apply border-secondary;
+
+        &:focus {
+             @apply shadow-outline-secondary;
+        }
     }
 
     &.bg-info {
-         @apply border-info-light
+        @apply border-info-light;
+
+        &:focus {
+             @apply shadow-outline-info;
+        }
+    }
+
+    &.text-info {
+         @apply border-info;
+
+        &:focus {
+             @apply shadow-outline-info;
+        }
     }
 
     &.bg-success {
-         @apply border-success-light
+         @apply border-success-light;
+
+        &:focus {
+             @apply shadow-outline-success;
+        }
+    }
+
+    &.text-success {
+         @apply border-success;
+
+        &:focus {
+             @apply shadow-outline-success;
+        }
     }
 
     &.bg-danger {
-         @apply border-danger-light
+         @apply border-danger-light;
+
+        &:focus {
+             @apply shadow-outline-danger;
+        }
+    }
+
+    &.text-danger {
+         @apply border-danger;
+
+        &:focus {
+             @apply shadow-outline-danger;
+        }
     }
 
     &.bg-warning {
-         @apply border-warning-light
+         @apply border-warning-light;
+
+        &:focus {
+             @apply shadow-outline-warning;
+        }
+    }
+
+    &.text-warning {
+        @apply border-warning;
+
+        &:focus {
+             @apply shadow-outline-warning;
+        }
+    }
+
+    &.xsmall {
+        @apply text-xs px-1 rounded !important;
     }
 
     &.small {
-        @apply text-xs p-2 !important;
+        @apply text-xs px-2 rounded !important;
     }
 
     &.large {
-         @apply text-lg p-3 !important;
+         @apply text-lg px-3 py-2 rounded-lg !important;
+    }
+
+    &.xlarge {
+         @apply text-xl p-3 rounded-lg !important;
     }
 }

@@ -22,15 +22,15 @@
   --info: #3ba7de;
   --info-dark: #0ba2d2;
 
-  --warning-light: #fdf5d4;
+  --warning-light: #ffe38f;
   --warning: #ffac3a;
   --warning-dark: #e07f23;
 
-  --success-light: #7cc1a0;
-  --success: #17c17e;
+  --success-light: #b3f0d2;
+  --success: #10b264;
   --success-dark: #059660;
 
-  --danger-light: #ffd9d4;
+  --danger-light: #ffafa9;
   --danger: #ed3c28;
   --danger-dark: #b10b07;
 }
