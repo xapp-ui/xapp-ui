@@ -1,6 +1,9 @@
 <template>
     <component :is="element" v-bind="$attrs" v-on="$listeners" :class="{
         'x-button': true,
+        'inline-block': spread === false,
+        'block': spread === true,
+        'w-full': spread === true,
         'bg-white': variant === 'default' || outline === true,
         'hover:bg-gray-lighter': variant === 'default',
         'bg-primary' : variant === 'primary' && outline === false,
@@ -55,6 +58,11 @@
             },
 
             outline: {
+                type: Boolean,
+                default: false
+            },
+
+            spread: {
                 type: Boolean,
                 default: false
             },
