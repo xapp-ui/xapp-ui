@@ -102,10 +102,6 @@
         }
     }
 
-    &.xsmall {
-        @apply text-xs px-1 rounded !important;
-    }
-
     &.small {
         @apply text-xs px-2 rounded !important;
     }

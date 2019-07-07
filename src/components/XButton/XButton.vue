@@ -76,7 +76,7 @@
                 type: String,
                 default: 'normal',
                 validator: (val) => {
-                    return ['normal', 'small', 'xsmall', 'large', 'xlarge'].indexOf(val) !== -1;
+                    return ['normal', 'small', 'large', 'xlarge'].indexOf(val) !== -1;
                 }
             }
         }

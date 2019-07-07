@@ -52,13 +52,11 @@ The ```x-button``` component can be used instead of an html standard button.
 <x-button variant='info' size='large'>LARGE</x-button>
 <x-button variant='info' size='normal'>NORMAL</x-button>
 <x-button variant='info' size='small'>SMALL</x-button>
-<x-button variant='info' size='xsmall'>EXTRA SMALL</x-button>
 ```html
 <x-button variant='info' size='xlarge'>EXTRA LARGE</x-button>
 <x-button variant='info' size='large'>LARGE</x-button>
 <x-button variant='info' size='normal'>NORMAL</x-button>
 <x-button variant='info' size='small'>SMALL</x-button>
-<x-button variant='info' size='xsmall'>EXTRA SMALL</x-button>
 ```
 
 ### Button Elements
