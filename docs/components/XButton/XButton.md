@@ -74,6 +74,21 @@ Default element of the button is just a normal button, but you can switch it to 
 <x-button element='input' value='Submit' type='submit' />
 ```
 
+### Button Group
+***
+Need to group some buttons? Its simple, wrap the button components with ```x-button-group``` component.  
+
+<x-button-group><x-button variant="success">Edit</x-button><x-button variant="warning">View</x-button><x-button variant="danger">Delete</x-button></x-button-group>
+
+```html
+<x-button-group>
+    <x-button variant="success">Edit</x-button>
+    <x-button variant="warning">View</x-button>
+    <x-button variant="danger">Delete</x-button>
+</x-button-group>
+```
+
+
 ### Button Spread
 ***
 add the attribute ```spread``` to make the button spread across its parent container.

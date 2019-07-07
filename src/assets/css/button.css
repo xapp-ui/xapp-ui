@@ -114,3 +114,20 @@
          @apply text-2xl rounded-lg px-4 py-3;
     }
 }
+
+.x-button-group {
+    display: inline-flex;
+}
+.x-button-group .x-button:not(:last-child) {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.x-button-group .x-button:not(:first-child) {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.x-button-group .x-button:not(:first-child) {
+    margin-left: -1px;
+}
