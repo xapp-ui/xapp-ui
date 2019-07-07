@@ -1,6 +1,6 @@
 <template>
     <component :is="element" v-bind="$attrs" v-on="$listeners" :class="{
-        'x-button': true,
+        'x-button': custom === false,
         'inline-block': spread === false,
         'block': spread === true,
         'w-full': spread === true,
@@ -30,9 +30,9 @@
         'text-success' : variant === 'success' && outline === true,
         'hover:bg-success-light' : variant === 'success' && outline === true,
         'hover:bg-success-dark' : variant === 'success' && outline === false,
-        'text-white': variant !== 'default' && !textDark,
-        'text-black' : variant === 'default' || textDark === true,
-        [size] : true
+        'text-white': custom === false && variant !== 'default' && !textDark,
+        'text-black' : custom === false && variant === 'default' || custom === false && textDark === true,
+        [size] : custom === false
     }">
         <slot v-if="element !== 'input'"></slot>
     </component>
@@ -67,6 +67,11 @@
                 default: false
             },
 
+            custom: {
+                type: Boolean,
+                default: false
+            },
+
             textDark: {
                 type: Boolean,
                 default: false
@@ -78,6 +83,12 @@
                 validator: (val) => {
                     return ['normal', 'small', 'large', 'xlarge'].indexOf(val) !== -1;
                 }
+            }
+        },
+
+        computed: {
+            elementClass() {
+
             }
         }
     }
