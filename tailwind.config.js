@@ -4,7 +4,7 @@ module.exports = {
       "transparent": "transparent",
       "black": "#000000",
       "white": "#ffffff",
-      
+
       'dark': 'var(--dark)',
       'gray-lightest': 'var(--gray-lightest)',
       'gray-lighter': 'var(--gray-lighter)',

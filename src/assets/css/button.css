@@ -1,5 +1,5 @@
 .x-button {
-    @apply rounded appearance-none font-bold px-2 py-1 border border-gray-light cursor-pointer text-base;
+    @apply rounded appearance-none px-2 py-1 font-bold border border-gray-light cursor-pointer text-base;
     transition: all 0.2s ease-in-out;
 
     &:focus {
@@ -103,14 +103,14 @@
     }
 
     &.small {
-        @apply text-xs px-2 rounded !important;
+        @apply text-xs rounded px-2 py-1;
     }
 
     &.large {
-         @apply text-lg px-3 py-2 rounded-lg !important;
+         @apply text-lg rounded-lg px-3 py-2;
     }
 
     &.xlarge {
-         @apply text-xl p-3 rounded-lg !important;
+         @apply text-2xl rounded-lg px-4 py-3;
     }
 }

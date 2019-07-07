@@ -89,3 +89,19 @@ add the attribute ```spread``` to make the button spread across its parent conta
 <x-button spread variant='secondary'>Secondary</x-button>
 <x-button spread variant='success'>Success</x-button>
 ```
+
+### Custom styles
+***
+You may use the ```class``` attribute to set your own classes.  
+
+###
+<x-button class='bg-purple-400-accent hover:bg-blue-400 text-white'>Example</x-button>
+<x-button class='shadow-md border-amber-900 border-2'>Example</x-button>
+<x-button class='text-2xl text-green hover:bg-green hover:text-white'>Example</x-button>
+
+```html
+
+<x-button class='bg-purple-400-accent hover:bg-blue-400 text-white'>Example</x-button>
+<x-button class='shadow-md border-amber-900 border-2'>Example</x-button>
+<x-button class='text-2xl text-green hover:bg-green hover:text-white p-0'>Example</x-button>
+```
