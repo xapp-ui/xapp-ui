@@ -1,6 +1,6 @@
 <template>
     <div class="x-form-group" :class="{
-        inline: inline
+        'flex-row': inline
     }">
         <slot></slot>
     </div>
