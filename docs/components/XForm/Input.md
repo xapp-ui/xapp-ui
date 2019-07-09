@@ -34,6 +34,7 @@ v-slot='{form, errors, reset}'
             placeholder='name@example.com' 
             v-model='form.email' 
             type="email" />
+        <p v-if='errors.email' class='text-red-300 text-xs'>{{ errors.email }}</p>
     </x-form-group>
     <div class='mt-2'>
         <x-button size='small' @click.prevent='reset'>Reset Form</x-button>
