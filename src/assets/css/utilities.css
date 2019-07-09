@@ -1,0 +1,40 @@
+@responsive {
+    .size-small {
+        @apply text-xs px-2 py-1;
+    }
+
+    .size-large {
+         @apply text-lg rounded-lg px-3 py-2;
+    }
+
+    .size-xlarge {
+         @apply text-2xl rounded-lg px-4 py-3;
+    }
+}
+
+@variants hover, focus {
+
+    .outline-primary {
+        @apply shadow-outline-primary !important;
+    }
+
+    .outline-secondary {
+        @apply shadow-outline-secondary !important;
+    }
+
+    .outline-success{
+        @apply shadow-outline-success !important;
+    }
+
+    .outline-warning {
+        @apply shadow-outline-warning !important;
+    }
+
+    .outline-danger {
+        @apply shadow-outline-danger !important;
+    }
+
+    .outline-info {
+        @apply shadow-outline-info !important;
+    }
+}

@@ -32,7 +32,10 @@
         'hover:bg-success-dark' : variant === 'success' && outline === false,
         'text-white': custom === false && variant !== 'default' && !textDark,
         'text-black' : custom === false && variant === 'default' || custom === false && textDark === true,
-        [size] : custom === false
+        'size-normal' : size === 'normal',
+        'size-small' : size === 'small',
+        'size-large' : size === 'large',
+        'size-xlarge' : size === 'xlarge',
     }">
         <slot v-if="element !== 'input'"></slot>
     </component>

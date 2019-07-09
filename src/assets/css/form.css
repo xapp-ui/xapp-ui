@@ -3,7 +3,15 @@
 
     &:focus {
         @apply shadow-outline;
-     }
+    }
+
+    &[readonly]  {
+         @apply text-gray-dark border-gray-lighter;
+    }
+
+    &[disabled]  {
+        @apply bg-gray-lightest text-gray-light border-gray-lighter;
+    }
 }
 
 .x-form-group {
