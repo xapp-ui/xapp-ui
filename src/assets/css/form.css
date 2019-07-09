@@ -1,0 +1,19 @@
+.x-form-input {
+    @apply border outline-none appearance-none border-gray px-2 py-1 text-base text-gray-darkest rounded antialiased;
+
+    &:focus {
+        @apply shadow-outline;
+     }
+}
+
+.x-form-group {
+    @apply mb-4 flex flex-col;
+
+    &.inline {
+        @apply flex-row !important;
+     }
+}
+
+.x-form-label {
+    @apply mb-1;
+}
