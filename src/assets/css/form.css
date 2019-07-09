@@ -16,10 +16,6 @@
 
 .x-form-group {
     @apply mb-4 flex flex-col;
-
-    &.inline {
-        @apply flex-row !important;
-     }
 }
 
 .x-form-label {
