@@ -108,6 +108,6 @@ Use ```inline ``` attribute on ```x-form-group``` component to switch the compon
 ```html
 <x-form-group inline>
     <x-form-label class='flex-1'>Your Email</x-form-label>
-    <x-form-input s placeholder='name@example.com' :class='flex-grow' />
+    <x-form-input placeholder='name@example.com' class='flex-grow' />
 </x-form-group>
 ```
