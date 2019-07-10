@@ -1,5 +1,5 @@
 <template>
-    <input class="x-form-input" v-bind="$attrs" v-on="listeners" :class="{
+    <input class="x-form-input" :type="type" v-bind="$attrs" v-on="listeners" :class="{
         'size-normal' : size === 'normal',
         'size-small' : size === 'small',
         'size-large' : size === 'large',
@@ -22,7 +22,8 @@
         'focus:outline-danger': variant === 'danger',
         'border-danger': variantBorder && variant === 'danger',
         'text-danger-dark': variantText && variant === 'danger',
-
+        'checked-primary': type === 'checkbox' && variant === 'primary',
+        'checked-success': type === 'checkbox' && variant === 'success',
     }" />
 </template>
 
@@ -46,6 +47,11 @@
             variantText: {
               type: Boolean,
               default: false
+            },
+
+            type: {
+              type: String,
+              default: 'text'
             },
 
             size: {
