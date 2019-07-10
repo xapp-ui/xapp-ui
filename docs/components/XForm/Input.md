@@ -129,3 +129,20 @@ Here is an example on how to make checkbox input by setting the ```type``` attri
 <x-form-label >success</x-form-label>
 </x-form-group>
 </div>
+
+```html
+<div class='inline-flex w-full'>
+    <x-form-group inline class='mr-3'>
+        <x-form-input type='checkbox' value='default' :checked='true' />
+        <x-form-label >default</x-form-label>
+    </x-form-group>
+    <x-form-group inline class='mr-3'>
+        <x-form-input size='large' variant='primary' type='checkbox' :checked='true' />
+        <x-form-label >primary</x-form-label>
+    </x-form-group>
+    <x-form-group inline>
+        <x-form-input size='xlarge' variant='success' type='checkbox' :checked='true' />
+        <x-form-label >success</x-form-label>
+    </x-form-group>
+</div>
+```
