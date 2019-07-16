@@ -1,5 +1,5 @@
 .x-form-input {
-    @apply border outline-none appearance-none border-gray px-2 py-1 text-base text-gray-darkest rounded antialiased;
+    @apply leading-tight border appearance-none outline-none border-gray px-2 py-1 text-base text-gray-darkest rounded antialiased;
 
     &:focus {
         @apply shadow-outline;
@@ -12,12 +12,40 @@
     &[disabled]  {
         @apply bg-gray-lightest text-gray-light border-gray-lighter;
     }
+
+    &[type=checkbox] {
+         @apply inline-block p-2 mr-1;
+        width: 1em;
+        height: 1em;
+
+        &:checked {
+             background: var(--gray-darker) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=) center no-repeat;
+         }
+
+        &.checked-primary {
+             @apply border-primary;
+            &:checked {
+                 background: var(--primary) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=) center no-repeat;
+             }
+         }
+
+        &.checked-success {
+             @apply border-success;
+            &:checked {
+                 background: var(--success) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=) center no-repeat;
+            }
+         }
+     }
 }
 
 .x-form-group {
     @apply mb-4 flex flex-col;
+
+    &.flex-row {
+        @apply flex-row items-center;
+     }
 }
 
 .x-form-label {
-    @apply mb-1;
+
 }
